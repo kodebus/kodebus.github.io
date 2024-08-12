@@ -37,5 +37,9 @@
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
+  // uncomment code below for adding multiple receiving email addresses
+  //$contact->cc = array('ccreceiver1@example.com', 'ccreceiver2@example.com');
+  //$contact->bcc = array('bccreceiver1@example.com', 'bccreceiver2@example.com');
+
   echo $contact->send();
 ?>
